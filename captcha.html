@@ -1,0 +1,23 @@
+<html>
+<title> Captcha ClientSide </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0.0" />
+<script src="jquery.min.js"></script>
+<link href="captcha.css" rel="stylesheet"></link>
+<script src="captcha.js"></script>
+</head>
+
+<body onload="captchagen()">
+<div class="captchas">
+<div class="captchabox">
+<div class="captchaboard">
+<input type="image" id="captcha" class="captcha" value="saxna" /></div>
+<div class="captcha-protector">saxna.com</div>
+</div>
+<input type="hidden" id="captchastatus" class="captchastatus" value="" />
+<div class="recaptcha" onclick="recaptcha()">
+re<font style="color:green;">Captcha</font></div>
+<div class="captchainput">
+<input type="text" id="inputcaptcha" class="inputcaptcha" value="" placeholder="captcha is case sensitive..." /><input type="button" class="submitbutton"  onclick="submit()" value="Submit" />
+</div></div>
+</body>
+</html>
